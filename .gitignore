@@ -16,14 +16,15 @@ subs/
 .progress.json
 *.log
 
-# Video files (temporary downloads)
-*.ts
-*.mp4
-*.m3u8
+# Video files (temporary downloads) - NOT TypeScript source files
+segment_*.ts
 video.ts
 complete_video.ts
 chunk_video.ts
 sample_video.ts
+processed_video.ts
+*.mp4
+*.m3u8
 
 # Subtitle files in root (keep organized ones in meeting folders)
 captions*.srt
