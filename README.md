@@ -127,6 +127,48 @@ tsx fetchMCPSOptimized.ts 50 thorough
 - **Coverage**: Excellent discussion coverage with minimal gaps
 - **Best For**: Academic research, policy analysis, detailed studies
 
+### YouTube Download Method (Fast & Efficient)
+
+For a much faster and more efficient approach, you can download meeting transcripts directly from the MCPS YouTube channel using yt-dlp. This method is significantly faster than downloading from the Swagit platform and uses less bandwidth.
+
+#### 🎥 YouTube Download Example
+
+```bash
+# Download subtitles from 10 most recent board meetings on YouTube
+tsx fetchMCPSYouTube.ts 10
+```
+
+**Expected Process:**
+```
+MCPS YouTube Subtitle Downloader
+================================
+Limiting to 10 videos
+Fetching video list from MCPS YouTube channel...
+Found 1872 total videos, 41 are board meetings
+
+[1/10] Processing...
+
+Downloading subtitles for: 6/24/25 Board of Education - Board Business Meeting
+Video ID: pchI3okWbTI
+✅ Downloaded 2 subtitle file(s):
+   - pchI3okWbTI_62425_Board_of_Education.en-orig.vtt
+   - pchI3okWbTI_62425_Board_of_Education.en.vtt
+```
+
+**Advantages of YouTube Method:**
+- **⚡ Much Faster**: Downloads complete in seconds vs 30-60 minutes
+- **💾 Minimal Storage**: Only subtitle files, no video segments
+- **🔄 Auto-Generated Captions**: YouTube provides auto-generated subtitles
+- **📊 Easy Filtering**: Automatically filters for board meetings only
+- **🎯 Direct Access**: No need to process video segments
+
+**Output Structure:**
+```
+📂 youtube_subs/
+├── 📄 youtube_metadata.json          # Tracking of downloaded videos
+└── 📄 [VideoID]_[Title].en.vtt      # Subtitle files in WebVTT format
+```
+
 ### Complete Downloads (Resource Intensive)
 
 For users who need perfect transcript quality and have significant time and storage resources available, the complete download option processes every video segment. This approach requires substantial resources but provides verbatim transcripts of entire meetings.

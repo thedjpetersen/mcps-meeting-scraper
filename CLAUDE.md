@@ -19,6 +19,9 @@ tsx fetchSubs.ts <master.m3u8_url> <max_segments>
 # Download COMPLETE MCPS meetings with full subtitles (resource intensive)
 tsx fetchMCPSComplete.ts <max_meetings>
 
+# Download MCPS meetings from YouTube using yt-dlp (fast & efficient)
+tsx fetchMCPSYouTube.ts <max_meetings>
+
 # Analyze downloaded subtitles
 tsx analyzeSubtitles.ts
 
